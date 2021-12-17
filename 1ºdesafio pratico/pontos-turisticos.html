@@ -1,0 +1,170 @@
+<!-- coloquei a estrutura do html aceitado pelo navegador e a linguagem também -->
+<!DOCTYPE html>
+<html>
+<!-- coloquei o nome do site -->
+<head>
+  <meta charset="UTF-8">
+  <title>Pontos Turísticos</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="pontos-turisticos.css">
+</head>
+<!-- o cabeçalho do site eu linkei com site do governo do maranhão, para pessoas que quiserem vir ao maranhão, tenham noção do trabalho do governo contra a covid -->
+<body>
+  <header>
+    <li class="cabecalho"><a href="https://www.corona.ma.gov.br/">⚠️CoronaVírus No Maranhão</a></li>
+  </header>
+
+  <div>
+ <!-- coloquei a fonte do cabeçalho da divisão em fonte grande  -->
+    <nav>
+      <!-- nesse container eu inseri o tittle e a imagem da bandeira do maranhão para formatá-los juntos -->
+      <h1 class="pontos-head" style="font-size: xx-large;"><em>Pontos Turísticos</em></h1>
+      <h2><img src="bandeira-estado-maranhao.jpg"></h2>
+    </nav>
+  </div>
+  <!-- na classe caixa eu juntei os 4 links para colocá-los em um mesmo menu-bar -->
+  <div class="caixa">
+<!-- adicionei a lista do menu-bar de navegação -->
+    <nav>
+      <ul class="menu-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cultura.html">Cultura</a></li>
+        <li><a href="pontos-turisticos.html">Pontos Turisticos</a></li>
+        <li><a href="historia-geral.html">Historia Geral</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- classe header para formatação do tittle -->
+
+  <div class="header">
+    <p>Pontos Turísticos Do Maranhão</p>
+  </div>
+<!-- criei a classe topnav para mudar a cor do background e acrescentar o nome Bem-vindos -->
+  <div class="topnav">
+    <h2 id="text-top">SEJAM BEM-VINDOS</h2>
+  </div>
+<!-- criei colunas com tittle dos locais e texto sobre cada um deles, com divisão entre cada coluna -->
+  <div class="row">
+    <div class="column">
+      <h2>Lençóis Maranhenses</h2>
+      <p>O Maranhão é um estado tropical, com muitas praias, portanto, podemos começar citando talvez um dos mais
+        famosos paraísos do estado,
+        os lençóis maranhenses.
+        Com 1.550 quilômetros quadrados de extensão, os lençóis maranhenses são um paraíso de dunas de areias brancas, e
+        lagoas naturais que
+        se formam a partir da água da chuva.
+        Além das lagoas, o visitante também pode dar um mergulho no mar, afinal é próximo ao parque.
+      </p>
+    </div>
+
+    <div class="column">
+      <h2>Praia Da Raposa</h2>
+      <p>Outros paraísos quase tão bons quantos os lençóis se localizam na ilha de São Luís. Temos como exemplo as
+        praias da Raposa,
+        onde você pode dar um passeio de barco caso assim desejar; e a praia do Mangue Seco, ambas situando-se no
+        município de Raposa e
+        sendo praias que valem a pena visitar</p>
+    </div>
+
+    <div class="column">
+      <h2>Centro Histórico</h2>
+      <p>Mas o Maranhão não é feito apenas de praias, com a capital do estado, São Luís, sendo o principal cartão
+        postal. Podemos começar
+        citando o seu rico Centro Histórico, o patrimônio cultural da humanidade desde 1994, a Atenas brasileira.
+        Podemos falar então a respeito das ruas de paralelepípedos conservados desde o período colonial, além dos
+        azulejos muito
+        bem trabalhados de casarões da mesma época.</p>
+    </div>
+<!-- criei uma galeria de fotos na sessão de IMAGENS, com colunas e bordas, além de espaço entre elas na sessão -->
+    <div class="background">
+      <h2 id="gallery-text">Imagens</h2>
+      <div class="gallery">
+        <a target="_blank" href="lencois-maranhenses.jpg">
+          <img src="lencois-maranhenses.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">lencois maranhenses</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="praia-da-raposa.jpg">
+          <img src="praia-da-raposa.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">praia da raposa</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="centro-historico.jpg">
+          <img src="centro-historico.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Centro Histórico</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="outro-centro-historico.jpg">
+          <img src="outro-centro-historico.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Centro Histórico</div>
+      </div>
+
+
+      <div class="gallery">
+        <a target="_blank" href="lencois-maranhenses.jpg">
+          <img src="lencois-maranhenses.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">lencois Maranhenses</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="chapada-das-mesas-maranhao.jpg">
+          <img src="chapada-das-mesas-maranhao.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Chapada Das Mesas</div>
+      </div>
+
+
+      <div class="gallery">
+        <a target="_blank" href="chapada-das-mesas.jpg">
+          <img src="chapada-das-mesas.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Chapada Das Mesas</div>
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <!-- mini sessão criada dentro de um container com cor cinza e branco -->
+
+      <h2>Quando Ir?</h2>
+
+      <div class="fakeimg" >
+        <p>O litoral oriental do Maranhão possui duas estações características
+          ao longo do ano.</p>
+        <p>A chuvosa, de fevereiro a maio, e a seca, de junho a janeiro.</p>
+        <p> Após a estação chuvosa o Parque Nacional dos Lençóis Maranhenses</p>
+        <p>apresenta seu mais belo cenário</p>
+        <p>Conforme o período seco avança as lagoas secam pouco a pouco</p>
+        <p>chegando em novembro com o nível bem baixo. Masisso tudo depende</p>
+        <p> do regime de chuva do ano, portanto, é sempre bom buscar informações</p>
+        <p> com a administração do Parque Nacional ou com o receptivo local.</p>
+        <p>O melhor período para visitar o Parque Nacional dos Lençóis Maranhenses</p>
+        <p> vai de maio a setembro, mas a unidade está aberta a</p>
+        <p>visitação o ano inteiro, de segunda a segunda, das 08:00 às 18:00.</p>
+        </p>
+      </div>
+<!-- acrescentei na mesma sessão um video incorporado no próprio youtube -->
+     
+    </div>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/o34fcLelgtE" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+               picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+      <img src="marca-maranhao.png">
+      <p class="copyright">&copy; Copyright Maranhão Tour - 2021</p>
+    </footer>
+
+</body>
+
+</html>

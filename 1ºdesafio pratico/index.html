@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Estado Do Maranhão</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <script src="scripts.js"></script>
+  <!-- coloquei um link no cabeçalho do site para o site do govero do maranhão -->
+  <header>
+    <li class="cabecalho"><a href="https://www.corona.ma.gov.br/">⚠️CoronaVírus No Maranhão</a></li>
+  </header>
+  <!-- criando o menu do site -->
+  <div class="caixa">
+
+    <nav>
+      <h1 style="font-size: larger;"><em>Maranhão Tour</em></h1>
+      <h2><img src="bandeira-estado-maranhao.jpg"></h2>
+      <ul class="menu-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cultura.html">Cultura</a></li>
+        <li><a href="pontos-turisticos.html">Pontos Turisticos</a></li>
+        <li><a href="historia-geral.html">Historia Geral</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- adicionando um video na seção do site -->
+  <main class="videos-section">
+    <div class="video">
+      <h3 class="nome-video" style="font-size: medium;">Por que o Maranhão é o melhor estado do Brasil?</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7UJ2kPIambA" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div style="visibility: hidden; height: 40px;">
+      +
+    </div>
+    <!-- criando uma classe para a seção Resumo-tour com os textos sobre o resumo do maranhão -->
+    <div class="content-resumo">
+      <h2 id="title-resumo">&#128270; Resumo Tour</h2>
+
+      <h2 id="list-cidades"></h2>
+
+      <p class="resumo">O Maranhão é o 8° maior estado da federação tem uma população total de 8 milhões de pessoas e um
+        PIB de cerca de 8 bilhões de reais.</p>
+      <p class="head-introducao">Os maiores centros urbanos do Estado são:</p>
+      <ul class="a">
+        <li>São Luís – 1.115,932 hab</li>
+        <li>Imperatriz – 259,980 hab</li>
+        <li>São José de Ribamar – 180.345 hab</li>
+        <li>Timon 171. 317 hab.</li><br>
+      </ul>
+    <div class="texto-final">
+      <br><p>A capital, São Luís é a cidade mais antiga e também</p>
+      <p> a mais populosa do estado, sendo um importante centro cultural</p>
+      <p>e arquitetônico, com seu Centro Histórico sendo tombado pelo IPHAN </p>
+      <p>sendo uma das poucas capitais brasileiras com um núcleo colonial tão conservado</p>
+    </div>
+  </main>
+  <!-- criando uma galeria responsiva de fotos com das cidades do maranhão -->
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="cidade-imagem.jpg">
+        <img src="cidade-imagem.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">São Luís Do Maranhão</div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imperatriz-cidade.jpg">
+        <img src="imperatriz-cidade.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Imperatriz-MA</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="ribamar-foto.jpg">
+        <img src="ribamar-foto.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">São José De Ribamar</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="timon-cidade.jpg">
+        <img src="timon-cidade.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Timon-MA</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <!-- criando uma sessão sobre a localização do maranhao, acrescentando paragrafos de texto -->
+  <h2 id="last-section">Localização do Maranhão</h2>
+
+  <div id="fundo-section">
+
+    <p>O Maranhão é um estado brasileiro situado na região Nordeste do Brasil. A cultura maranhense é resultado da
+      influência das populações que ocuparam o estado ao longo da sua colonização. A sua capital, São Luís, possui
+      um centro histórico muito conservado.</p>
+    <p>O governo maranhense é composto pelas esferas executiva, legislativa e judiciária.
+      A sua economia é vinda do setor produtivo primário. O estado possui grandes belezas naturais que aumentam o
+      turismo na região.</p>
+    <p>A sua posição geográfica representa uma área de transição entre as regiões nordestina e amazônica do
+      território brasileiro.</p>
+    <p>O clima maranhense é predominantemente Tropical, influenciado pela maritimidade e também pela umidade
+      proveniente da região amazônica.</p>
+
+
+
+
+  </div>
+
+
+  </div>
+  </div>
+
+  <!-- criando o modelo do rodapé, com imagem azul de fundo, imagem do maranhão, com texto do copyright e simbolo. Coloquei botão com evento clique.
+usei no javascript a função model para fazer o formulário aparecer no rodapé ao clicar no botão FORM  -->
+
+  <footer>
+    <button onclick="model()" class="toggle">
+      Clique Aqui
+    </button>
+
+    <form class="model">
+      
+      <br><label for="nome" class="label-text">Coloque Seu Nome Completo</label>
+      <input type="email" placeholder="Coloque seu email">
+      <br><label for="sobrenome" class="label-text">Mande Sua Sugestão ou Dúvida</label>
+      <textarea placeholder="Mande sua surgestão ou dúvida"></textarea>
+      <button type="submit">ENVIAR</button>
+
+    </form>
+
+
+    <img src="marca-maranhao.png">
+    <p class="copyright">&copy; Copyright Maranhão Tour - 2021</p>
+
+  </footer>
+
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

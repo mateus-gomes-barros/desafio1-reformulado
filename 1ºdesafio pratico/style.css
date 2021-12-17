@@ -1,0 +1,286 @@
+/* plano de fundo na cor azul */
+
+header {
+width: 100%;
+min-height: 24vh;  
+    background: #5b8eb8;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    clip-path: circle(100vh at 50% -40vh);
+}
+/* Nesta função, o formulário está sendo setado para ser visualizado,
+colocando uma class para retirar a opacitade 0 inicial para 1 */
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(213, 214, 240);
+}
+
+.model{
+  transition:  1s;
+  opacity:0;
+}
+
+.visibilityModel{
+ opacity: 1;
+}
+/* formatação do menu-bar */
+.caixa {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    /* margin: 0 0 0 55px; */
+    /* margin-bottom: 100px; */
+    padding: 20px;
+    background-color: rgb(192, 194, 230);
+    border-color: #1c0f9152;
+    border-width: 1px; 
+    border-style: solid;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+ nav a {
+    text-transform: uppercase;
+    color: #0d0d0ed7;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* quando o mouse estiver sobre o link, sua cor mudará para vermelho */
+nav li:hover {
+background-color: #c23b3b; 
+/* o tempo que demora para a cor aparacer ao posicionar o mouse sobre o link */
+transition: 0.7s;
+
+opacity: 0.9;
+
+}
+/* formatação do botão para ele ficar redondo, com sobra vermelha */
+.toggle{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(232, 73, 73, 0.535);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 1px 5px 10px rgba(211, 48, 48, 0.457);
+}
+/* quando o mouse está sobre o botão, ele fica branco */
+.toggle:hover{
+  background-color: gray;
+  box-shadow: 0 1px 5px 10px rgba(248, 248, 248, 0.457);
+}
+
+/* cor do background do nome Maranhão Tour */
+h1 {
+    color: #3d1d1dd2;
+    position: absolute;
+    left: 90px;
+    padding: 5px;
+    margin: 54px;
+    margin-left: 15px;
+}
+/* o h2 é a formatação da imagem da bandeira do maranhão */
+h2 {
+    margin: 0  0 10px;
+    text-align: center;
+    width: 100%; 
+    padding-top: 10px; 
+    padding-bottom: 20px; 
+}
+
+h2 img {
+    width: 100px;  
+}
+/* editando as bordas do menu-bar */
+.menu-bar {
+border: rgba(0, 0, 0, 0.255) solid 2px;
+text-align: center;
+
+}
+.cabecalho {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* formatação do Resumo Tour, coloquei um filtro de escala de cinza para melhorar a visualização do texto */
+.content-resumo {
+    background-image: url("fundo-vermelho.jpg");
+    filter:grayscale(0.4);
+
+}
+#title-resumo {
+    position: absolute;
+    left: -535px;
+    color: rgb(224, 199, 199);
+    font-size: 40px;
+    
+}
+.resumo {
+    width: 30%;
+    margin: auto;
+    text-align: justify;
+    color: rgb(226, 213, 213);
+    font-size: 19px;
+    
+}
+
+/* o rodapé eu fiz a formatação com imagem de fundo, mais imagem do maranhão e o copyright, com o simbolo do copyright */
+footer {
+    text-align: center;
+    background: url("fundo-texturizado.jpg");
+    padding: 40px 0;
+}
+footer img{
+    height: 70px;
+}
+.copyright {
+    color: cornsilk;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+/* formatação nome-video, do video sobre o maranhão. Centralizei ele e formatei o tamanho */
+.nome-video{
+    background: rgb(151, 19, 19);
+    border: rgb(51, 19, 139) solid 2px;
+    color: white;
+    padding: 10px;
+
+
+}
+.video {
+    background: rgb(94, 137, 216);
+    text-align: center;
+}
+/* criei uma lista e o tema da lista com a tag HEAD-INTRODUCAO */
+.head-introducao {
+    color: cornsilk;
+    margin-top: 10px;
+}
+ul.a {
+    width: 50%;
+    list-style-type: circle;
+    color: rgb(225, 220, 203);
+    margin: 20px 0 0;
+    font-size: 17px;
+    
+  }
+  
+  .texto-final p {
+    font-size: 18px;
+    color: rgb(221, 218, 201);
+  }
+/* formatação da galeria de imagens */
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  /* borda da galeria */
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .desc {
+    margin: 20px 0 0;
+    font-size: 20px;
+    font-weight: 700; 
+    color: rgb(31, 30, 29); 
+  }
+  
+  /* aplicando para todas as galerias de foto uma borda */
+  * {
+    box-sizing: border-box;
+  }
+  /* galeria responsiva */
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive, video-section {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #last-section {
+    font-size: 30px;
+    filter: opacity(-100%);
+    color: rgb(32, 32, 31);  
+  }
+  
+
+  #fundo-section {
+    background-image:  url(branco-fundo.jpg);
+    background-position: auto;
+    background-repeat:  repeat;
+    padding: 80px;
+    margin: 42px;
+    display :flex;
+    gap:50px;
+  }
+  #fundo-section p {
+  width: 200px;
+  text-align: left;
+  }
+
+/* colocando display flex para organizar formulario em formato de coluna */
+form{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  opacity: 0.8;
+
+}
+.label-text {
+  color: #f0e9e9;
+}
+form input, textarea{
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+form div.single-input .input:focus,
+form div.single-input .input:valid{
+    border-bottom: 2px solid cornflowerblue;
+}
+
+form div.single-input .input:focus ~ label,
+form div.single-input .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: cornflowerblue;
+}
